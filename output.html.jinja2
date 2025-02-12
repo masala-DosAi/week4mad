@@ -1,7 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <tiltle>
+        <tiltle><!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Student Data
+        </title>
+    </head>
+    <body>
+        <h1>{{header}}</h1>
+        <table border="2" id = "student-details-table">
+            <thead>
+                <tr>
+                    <th>{{headd[0]}}</th>
+                    <th>{{headd[1]}}</th>
+                    <th>{{headd[2]}}</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for x in data %}
+                <tr>
+                    <td>{{x[0]}}</td>
+                    <td>{{x[1]}}</td>
+                    <td>{{x[2]}}</td>
+                </tr>
+                {% endfor %}
+                <tr>
+                   <td colspan = "2" style="text-align:center"> Total Marks </td>
+                   <td>{{total_marks}}</td>
+               </tr>
+
+            </tbody>
+        </table>
+        <a href="/">go back</a>
+    </body>
+</html>
             Student Data
         </title>
     </head>
